@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protege tus Datos: Encriptador Seguro y Eficiente</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets/img/Icon.png" type="image/png">
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="assets/img/Icon.png" alt="logo de seguridad" />
+    </header>
+    <main>
+      <form class="form__section">
+        <textarea
+          class="form__input"
+          name="mensaje"
+          id="myTextarea"
+          cols="30"
+          rows="10"
+          placeholder="Ingrese el texto aquí"
+        ></textarea>
+        <div class="btn__container">
+          <div class="alert__msj">
+            <img src="assets/img/Spam.png" alt="alert" /><span
+              >Solo letras minúsculas, sin caracteres especiales, ni acentos.</span
+            >
+          </div>
+        </div>
+        <div class="submit__container">
+          <input
+            class="form__btn"
+            type="submit"
+            value="Encriptar"
+            id="encriptarBtn"
+          />
+          <input
+            class="form__btn--secondary"
+            type="submit"
+            value="Desencriptar"
+            id="desencriptarBtn"
+          />
+        </div>
+      </form>
+      <aside class="result">
+        <img id="result__img"
+          src="assets/img/planificacion.png"
+          alt="Imagen de encriptacion"
+          class="result__img"
+        />
+        <div class="result__container">
+          <h2 id="resultTitle"></h2>
+          <p id="error-message" class="error hidden"></p>
+          <p id="result__text" class="result__text">
+            Ingresa el texto que deseas encriptar o desencriptar.
+          </p>
+       
+          <button id="copiarBtn" class="form__btn--secondary hidden">
+            Copiar
+          </button>
+        </div>
+      </aside>
+    </main>
+    <script src="encriptacion.js"></script>
+  </body>
+</html>
